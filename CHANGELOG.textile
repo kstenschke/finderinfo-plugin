@@ -1,3 +1,4 @@
 h1. Finder Info Plugin - Changelog
 
+* 1.0.1 Added: Keyboard shortcut - [CMD] + [I]
 * 1.0.0 Initial Release
