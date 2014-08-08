@@ -67,23 +67,25 @@ class FinderInfoAction extends AnAction {
      */
     public void actionPerformed(AnActionEvent event) {
         VirtualFile file = this.getVirtualFile(event);
-        String command[] = {
-                "osascript", "-e",
-                "tell application \"Finder\" to open information window of (POSIX file \"" + file.getCanonicalPath() + "\" as alias)"
-        };
-        try {
-            Process process = Runtime.getRuntime().exec( command );
-            printErrorStream(process);
-        } catch (IOException e) {
-            System.out.println( "IOException: " + e.getMessage() );
-        }
+        if( file != null ) {
+            String command[] = {
+                    "osascript", "-e",
+                    "tell application \"Finder\" to open information window of (POSIX file \"" + file.getCanonicalPath() + "\" as alias)"
+            };
+            try {
+                Process process = Runtime.getRuntime().exec( command );
+                printErrorStream(process);
+            } catch (IOException e) {
+                System.out.println( "IOException: " + e.getMessage() );
+            }
 
-        String command2[] = { "osascript", "-e", "tell application \"Finder\" to activate" };
-        try {
-            Process process = Runtime.getRuntime().exec( command2 );
-            printErrorStream(process);
-        } catch (IOException e) {
-            System.out.println( "IOException: " + e.getMessage() );
+            String command2[] = { "osascript", "-e", "tell application \"Finder\" to activate" };
+            try {
+                Process process = Runtime.getRuntime().exec( command2 );
+                printErrorStream(process);
+            } catch (IOException e) {
+                System.out.println( "IOException: " + e.getMessage() );
+            }
         }
     }
 

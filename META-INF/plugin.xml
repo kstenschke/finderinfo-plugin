@@ -35,9 +35,10 @@
       Additionally, opening the file information brings all finder windows to the front.
       Please note: this plugin works on Mac OSX only.
     ]]></description>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <change-notes><![CDATA[
     <ul>
+      <li>v1.0.2 Bugfix: Evocation via keyboard shortcut was possible w/o any file selected (null pointer exception)</li>
       <li>v1.0.1 Added: Keyboard shortcut - [CMD] + [I]</li>
       <li>v1.0.0 Initial Release</li>
     </ul>

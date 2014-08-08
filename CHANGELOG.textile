@@ -1,4 +1,5 @@
 h1. Finder Info Plugin - Changelog
 
+* 1.0.2 Bugfix: Evocation of plugin via keyboard shortcut was possible w/o any file selected (null pointer exception)
 * 1.0.1 Added: Keyboard shortcut - [CMD] + [I]
 * 1.0.0 Initial Release
