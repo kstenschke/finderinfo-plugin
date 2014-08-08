@@ -33,7 +33,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class FinderInfoAction extends AnAction {
+class FinderInfoAction extends AnAction {
 
     /**
      * Hide menu item if no file selected
@@ -63,7 +63,7 @@ public class FinderInfoAction extends AnAction {
     /**
      * Reveal info of selected file
      *
-     * @param   event
+     * @param   event   AnActionEvent
      */
     public void actionPerformed(AnActionEvent event) {
         VirtualFile file = this.getVirtualFile(event);

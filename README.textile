@@ -8,6 +8,7 @@ RubyMine, WebStorm, PhpStorm, PyCharm, PyCharm CE, AppCode and Android Studio.
 h2. Description
 
 The plugin extends the project files popup menu with an option for showing file informations in the Mac OSX finder.
+Having the files component focussed, the keyboard shortcut [CMD] + [I] opens the finder file informations as well.
 Additionally, opening the file information brings all finder windows to front.
 
 Please note: this plugin works on Mac OSX only.

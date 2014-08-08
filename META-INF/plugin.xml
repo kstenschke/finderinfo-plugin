@@ -27,17 +27,20 @@
 <idea-plugin version="2">
   <id>com.kstenschke.finderinfo</id>
   <name>Finder Info</name>
-  <version>1.0.0</version>
   <vendor email="info@stenschke.com" url="">Kay Stenschke</vendor>
 
   <description><![CDATA[
       Extends the project files popup menu with an option for showing file informations in the Mac OSX finder.
+      Having the files component focussed, the keyboard shortcut [CMD] + [I] opens the finder file informations as well.
       Additionally, opening the file information brings all finder windows to the front.
       Please note: this plugin works on Mac OSX only.
     ]]></description>
-
+  <version>1.0.1</version>
   <change-notes><![CDATA[
-      v1.0.0 Initial Release
+    <ul>
+      <li>v1.0.1 Added: Keyboard shortcut - [CMD] + [I]</li>
+      <li>v1.0.0 Initial Release</li>
+    </ul>
     ]]>
   </change-notes>
 
@@ -59,7 +62,8 @@
   <actions>
       <action id="FinderInfo" class="com.kstenschke.finderinfo.actions.FinderInfoAction" text="Show Informations"
               description="Show File Informations in Finder">
-          <add-to-group group-id="ProjectViewPopupMenuModifyGroup" anchor="first"/>
+          <keyboard-shortcut first-keystroke="ctrl I" keymap="$default" />
+          <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
       </action>
   </actions>
 
