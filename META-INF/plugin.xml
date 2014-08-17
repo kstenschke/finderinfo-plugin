@@ -38,7 +38,7 @@
   <version>1.0.2</version>
   <change-notes><![CDATA[
     <ul>
-      <li>v1.0.2 Bugfix: Evocation via keyboard shortcut was possible w/o any file selected (null pointer exception)</li>
+      <li>v1.0.2 Bugfix: Evocation via keyboard shortcut w/o any file selected caused null pointer exception</li>
       <li>v1.0.1 Added: Keyboard shortcut - [CMD] + [I]</li>
       <li>v1.0.0 Initial Release</li>
     </ul>
