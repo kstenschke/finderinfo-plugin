@@ -61,8 +61,8 @@
   </project-components>
 
   <actions>
-      <action id="FinderInfo" class="com.kstenschke.finderinfo.actions.FinderInfoAction" text="Show Informations"
-              description="Show File Informations in Finder">
+      <action id="FinderInfo" class="com.kstenschke.finderinfo.actions.FinderInfoAction" text="Get Finder Info"
+              description="Show File Information in Finder">
           <keyboard-shortcut first-keystroke="ctrl I" keymap="$default" />
           <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
       </action>
