@@ -24,7 +24,7 @@
   ~ THE SOFTWARE.
   -->
 
-<idea-plugin version="2">
+<idea-plugin >
   <id>com.kstenschke.finderinfo</id>
   <name>Finder Info</name>
   <vendor email="info@stenschke.com" url="">Kay Stenschke</vendor>
@@ -35,9 +35,10 @@
       Additionally, opening the file information brings all finder windows to the front.
       Please note: this plugin works on Mac OSX only.
     ]]></description>
-  <version>1.0.2</version>
+  <version>1.0.4</version>
   <change-notes><![CDATA[
     <ul>
+      <li>v1.0.3 Bugfix: Updated deprecated Class</li>
       <li>v1.0.2 Bugfix: Evocation via keyboard shortcut w/o any file selected caused null pointer exception</li>
       <li>v1.0.1 Added: Keyboard shortcut - [CMD] + [I]</li>
       <li>v1.0.0 Initial Release</li>

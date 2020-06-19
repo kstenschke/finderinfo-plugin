@@ -57,7 +57,7 @@ class FinderInfoAction extends AnAction {
     }
 
     private VirtualFile getVirtualFile(AnActionEvent event) {
-        return DataKeys.VIRTUAL_FILE.getData(event.getDataContext());
+        return PlatformDataKeys.VIRTUAL_FILE.getData(event.getDataContext());
     }
 
     /**
